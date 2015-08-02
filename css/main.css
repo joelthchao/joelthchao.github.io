@@ -30,9 +30,24 @@ html, body {
     right: 60px;
     top: 0px;
     height: 60px;
-    padding-right: 15px;
+    padding-right: 15px;    
+}
+
+.nav_top_menu_item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    float: left;
+    margin-left: 20px;
     line-height: 60px;
-    color:white;
+    color: white;
+    cursor: pointer;
+}
+
+.nav_top_menu_item_selected {
+    border-color: #FFFFFF;
+    -webkit-transition: border-color 1s ease;
+    -moz-transition: border-color 1s ease;
+    -o-transition: border-color 1s ease;
+    transition: border-color 1s ease;
 }
 
 #nav_right {
@@ -45,10 +60,48 @@ html, body {
     z-index: 2;
 }
 
+#nav_right_menu {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    height: 240px;
+    margin: auto;   
+}
+
+.nav_right_menu_item {
+    border-left: 1px solid rgba(255, 255, 255, 0);
+    height: 60px;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: border-color 0.5s ease;
+    -moz-transition: border-color 0.5s ease;
+    -o-transition: border-color 0.5s ease;
+    transition: border-color 0.5s ease;
+}
+
+.nav_right_menu_item:hover {
+    border-color: #FFFFFF;
+}
+
 .page_block {
     position: relative;
     left: 0px;
     width: 100%;
     height: 100vh;
+    color: white;
     background-color: #000020;
+    border-bottom: solid 2px #00FF00
+}
+
+.center_text_block {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+span {
+    display: table-cell;
+    vertical-align: middle;
 }

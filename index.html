@@ -3,20 +3,107 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-<link rel="stylesheet" type="text/css" href="css/main.css" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#buttom_about").click(function(){
+      $('.nav_top_menu_item_selected').removeClass("nav_top_menu_item_selected");
+      $(this).addClass("nav_top_menu_item_selected");
+      $('html, body').animate({
+        scrollTop: $("#block_about").offset().top
+      }, 200);
+    });
+    $("#buttom_experience").click(function(){
+      $('.nav_top_menu_item_selected').removeClass("nav_top_menu_item_selected");
+      $(this).addClass("nav_top_menu_item_selected");
+      $('html, body').animate({
+        scrollTop: $("#block_experience").offset().top
+      }, 200);
+    });
+    $("#buttom_project").click(function(){
+      $('.nav_top_menu_item_selected').removeClass("nav_top_menu_item_selected");
+      $(this).addClass("nav_top_menu_item_selected");
+      $('html, body').animate({
+        scrollTop: $("#block_project").offset().top
+      }, 200);
+    });
+    $("#buttom_publication").click(function(){
+      $('.nav_top_menu_item_selected').removeClass("nav_top_menu_item_selected");
+      $(this).addClass("nav_top_menu_item_selected");
+      $('html, body').animate({
+        scrollTop: $("#block_publication").offset().top
+      }, 200);
+    });
+    $("#buttom_contact").click(function(){
+      $('.nav_top_menu_item_selected').removeClass("nav_top_menu_item_selected");
+      $(this).addClass("nav_top_menu_item_selected");
+      $('html, body').animate({
+        scrollTop: $("#block_contact").offset().top
+      }, 200);
+    });
+  });
+</script>
+
+<!-- Navigation -->
 <div id="nav_top">
-   <div id="nav_top_menu">menu</div>
-   <div id="nav_top_title">title</div>
+  <div id="nav_top_menu">
+    <div id="buttom_about" class="nav_top_menu_item nav_top_menu_item_selected">About</div>
+    <div id="buttom_experience" class="nav_top_menu_item">Experience</div>
+    <div id="buttom_project" class="nav_top_menu_item">Project</div>
+    <div id="buttom_publication" class="nav_top_menu_item">Publication</div>
+    <div id="buttom_contact" class="nav_top_menu_item">Contact</div>
+  </div>
+  <div id="nav_top_title">Ting-Hsuan Chao (Joel)</div>
 </div>
-<div id="nav_right"></div>
-<div class="page_block">block one</div>
-<div class="page_block">block two</div>
-<div class="page_block">block three</div>
+<div id="nav_right">
+  <div id="nav_right_menu">
+    <div class="nav_right_menu_item">FB</div>
+    <div class="nav_right_menu_item">LinkedIn</div>
+    <div class="nav_right_menu_item">GitHub</div>
+    <div class="nav_right_menu_item nav_right_menu_item_selected">G+</div>
+  </div>
+</div>
+
+<!-- Content -->
+<div id="block_about" class="page_block">
+  <div class="center_text_block">
+    <span>
+      Hello. My name is Ting-Hsuan Chao (Joel). <br>
+      I'm a student study in National Taiwan University department of Computer Science, <br>
+      doing research in Communications & Multimedia Lab MiRA Group <br>
+      <a target= "_blank" href="tinghsuanchao_cv.pdf">[CV]</a> 
+      <a target= "_blank" href="https://github.com/joelthchao">[GitHub]</a>
+    </span>
+  </div>
+</div>
+
+<div id="block_experience" class="page_block">
+  <div class="center_text_block">
+    <span>
+      Born on 11 Dec. 1990 <br>
+      <i>Originally wish to become a electrical engineer but step into region of computer science with curiousity.<br>
+      Hope multimedia's power can change people's life style and improve life's quality.<br>
+      Working happily is always my ultimate goal. :)
+      </i>
+      <br>
+      Education <br>
+      1997-2003 Li-Ming Elementary School<br>
+      2003-2006 Viator Catholic Junior High School<br>
+      2006-2009 Taichung First Senior High School<br>
+      2009-2013 National Taiwan University Bachelor of Electrical Engineering<br>
+      2013-Now National Taiwan University Master of Computer Science in Communications & Multimedia Lab
+    </span>
+  </div>
+</div>
+<div id="block_project" class="page_block">block Project</div>
+<div id="block_publication" class="page_block">block Publication</div>
+<div id="block_contact" class="page_block">block Contact</div>
 
 </body>
 </html>
