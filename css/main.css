@@ -11,7 +11,8 @@ html, body {
     width: 100%;
     height: 50px;
     background-color: blue;
-    opacity: 0.5;
+    opacity: 0.4;
+    z-index: 1;
 }
 
 #nav_right {
@@ -21,5 +22,14 @@ html, body {
     width: 50px;
     height: 100%;
     background-color: yellow;
-    opacity: 0.5;
+    opacity: 0.4;
+    z-index: 2;
+}
+
+.page_block {
+    position: relative;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: orange;
 }
