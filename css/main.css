@@ -105,3 +105,17 @@ span {
     display: table-cell;
     vertical-align: middle;
 }
+
+.large_font {
+    font-size: 40pt;
+}
+
+.medium_font {
+    font-size: 12pt;
+}
+
+td {
+    padding: 0 20px 0 20px;
+    vertical-align: top;
+    max-width: 750px;
+}
