@@ -119,6 +119,16 @@ td {
     max-width: 750px;
 }
 
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.indent_ul {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
 .project_block {
     padding: 0 5px 5px 5px;
     width: 150px;
