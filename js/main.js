@@ -1,5 +1,65 @@
 $(document).ready(function(){
 
+  var highlight_item = function(item){    
+    $('.nav_top_menu_item_selected').removeClass("nav_top_menu_item_selected");
+    $(item).addClass("nav_top_menu_item_selected");
+  }
+
+  var slide_to_about = function(){    
+    highlight_item($("#buttom_about"));
+    $('html, body').animate({
+      scrollTop: $("#block_about").offset().top
+    }, 200);
+  };
+  var slide_to_experience = function(){
+    highlight_item($("#buttom_experience"));
+    $('html, body').animate({
+      scrollTop: $("#block_experience").offset().top
+    }, 200);
+  };
+  var slide_to_project = function(){
+    highlight_item($("#buttom_project"));
+    $('html, body').animate({
+      scrollTop: $("#block_project").offset().top
+    }, 200);
+  };
+  var slide_to_publication = function(){
+    highlight_item($("#buttom_publication"));
+    $('html, body').animate({
+      scrollTop: $("#block_publication").offset().top
+    }, 200);
+  }
+  var slide_to_contact = function(){
+    highlight_item($("#buttom_contact"));
+    $('html, body').animate({
+      scrollTop: $("#block_contact").offset().top
+    }, 200);
+  }
+
+  // Scroll and highlight item
+  $(document).scroll(function(){
+    // Get top information
+    var current_top = $(document).scrollTop();
+    var about_top = $('#block_about').offset().top;
+    var experience_top = $('#block_experience').offset().top;
+    var project_top = $('#block_project').offset().top;
+    var publication_top = $('#block_publication').offset().top;
+    var contact_top = $('#block_contact').offset().top;
+
+    // Find current closest block 
+    var top_arr = [about_top, experience_top, project_top, publication_top, contact_top];
+    var closest = top_arr.reduce(function (prev, curr) {
+      return (Math.abs(curr - current_top) < Math.abs(prev - current_top) ? curr : prev);
+    });
+
+    // highlight it
+    if (closest == about_top) highlight_item($('#buttom_about'));
+    if (closest == experience_top) highlight_item($('#buttom_experience'));
+    if (closest == project_top) highlight_item($('#buttom_project'));
+    if (closest == publication_top) highlight_item($('#buttom_publication'));
+    if (closest == contact_top) highlight_item($('#buttom_contact'));    
+  });
+  
   // Sliding for up/down arrow, page up/down evnets 
   $(document).keydown(function(event){
     var scroll_up = true;
@@ -49,42 +109,6 @@ $(document).ready(function(){
     if (scroll_to == publication_top) slide_to_publication();
     if (scroll_to == contact_top) slide_to_contact();
   });
-  
-  var slide_to_about = function(){
-    $('.nav_top_menu_item_selected').removeClass("nav_top_menu_item_selected");
-    $("#buttom_about").addClass("nav_top_menu_item_selected");
-    $('html, body').animate({
-      scrollTop: $("#block_about").offset().top
-    }, 200);
-  };
-  var slide_to_experience = function(){
-    $('.nav_top_menu_item_selected').removeClass("nav_top_menu_item_selected");
-    $("#buttom_experience").addClass("nav_top_menu_item_selected");
-    $('html, body').animate({
-      scrollTop: $("#block_experience").offset().top
-    }, 200);
-  };
-  var slide_to_project = function(){
-    $('.nav_top_menu_item_selected').removeClass("nav_top_menu_item_selected");
-    $("#buttom_project").addClass("nav_top_menu_item_selected");
-    $('html, body').animate({
-      scrollTop: $("#block_project").offset().top
-    }, 200);
-  };
-  var slide_to_publication = function(){
-    $('.nav_top_menu_item_selected').removeClass("nav_top_menu_item_selected");
-    $("#buttom_publication").addClass("nav_top_menu_item_selected");
-    $('html, body').animate({
-      scrollTop: $("#block_publication").offset().top
-    }, 200);
-  }
-  var slide_to_contact = function(){
-    $('.nav_top_menu_item_selected').removeClass("nav_top_menu_item_selected");
-    $("#buttom_contact").addClass("nav_top_menu_item_selected");
-    $('html, body').animate({
-      scrollTop: $("#block_contact").offset().top
-    }, 200);
-  }
 
   // Register click event for top menu buttom
   $("#buttom_about").click(slide_to_about);
