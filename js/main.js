@@ -52,7 +52,7 @@ $(document).ready(function(){
       return (Math.abs(curr - current_top) < Math.abs(prev - current_top) ? curr : prev);
     });
 
-    // highlight it
+    // Highlight it
     if (closest == about_top) highlight_item($('#buttom_about'));
     if (closest == experience_top) highlight_item($('#buttom_experience'));
     if (closest == project_top) highlight_item($('#buttom_project'));
