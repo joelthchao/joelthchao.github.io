@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  // Sliding for up/down arrow, page up/down evnets 
   $(document).keydown(function(event){
     var scroll_up = true;
     if (event.which == 33 || event.which == 38){
@@ -83,6 +85,8 @@ $(document).ready(function(){
       scrollTop: $("#block_contact").offset().top
     }, 200);
   }
+
+  // Register click event for top menu buttom
   $("#buttom_about").click(slide_to_about);
   $("#buttom_experience").click(slide_to_experience);
   $("#buttom_project").click(slide_to_project);
