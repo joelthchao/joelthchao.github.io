@@ -142,13 +142,13 @@ ul.indent_ul {
 }
 
 a.button {
-    line-height: 25px;
+    font-size: 10pt;    
     text-decoration: none;
     color: white;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border: 1px solid #FFFFFF;
-    padding: 1px 10px 1px 10px;
+    padding: 0px 10px 0px 10px;
 }
 
 a.button:hover {
