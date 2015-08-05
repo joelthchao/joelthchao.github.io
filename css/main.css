@@ -140,3 +140,12 @@ ul.indent_ul {
 .project_block_text {
     font-size: 15pt;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
