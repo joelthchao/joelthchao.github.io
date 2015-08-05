@@ -141,11 +141,21 @@ ul.indent_ul {
     font-size: 15pt;
 }
 
-a {
+a.button {
+    line-height: 25px;
     text-decoration: none;
     color: white;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border: 1px solid #FFFFFF;
+    padding: 1px 10px 1px 10px;
 }
 
-a:hover {
-    text-decoration: underline;
+a.button:hover {
+    color: black;
+    background-color: #FFFFFF;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
