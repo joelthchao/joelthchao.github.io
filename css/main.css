@@ -95,6 +95,14 @@ html, body {
     background-color: #000020;
 }
 
+#email_field {
+    position: absolute;
+    color: white;
+    top: 255px;
+    right: -325px;
+    z-index: 10;
+}
+
 #block_about {
     background: url(../img/bg_topoftherock.JPG) no-repeat center center;
     background-size: 100%;

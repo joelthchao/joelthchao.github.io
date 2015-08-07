@@ -58,6 +58,12 @@ $(document).ready(function(){
     if (closest == project_top) highlight_item($('#buttom_project'));
     if (closest == publication_top) highlight_item($('#buttom_publication'));
     if (closest == skill_top) highlight_item($('#buttom_skill'));    
+
+    if ($("#email_field").css("right") == "75px"){
+      $("#email_field").animate({
+        'right': "-=400px"
+      }, 500);
+    }
   });
   
   // Sliding for up/down arrow, page up/down evnets 
@@ -116,4 +122,19 @@ $(document).ready(function(){
   $("#buttom_project").click(slide_to_project);
   $("#buttom_publication").click(slide_to_publication);
   $("#buttom_skill").click(slide_to_skill);
+
+  var email_toggle = function(){
+    if ($("#email_field").css("right") == "75px"){
+      $("#email_field").animate({
+        'right': "-=400px"
+      }, 500);
+    }
+    else{
+      $("#email_field").animate({
+        'right': "+=400px"
+      }, 500);
+    }
+  }
+
+  $("#email_button").click(email_toggle);
 });
