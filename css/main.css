@@ -71,6 +71,7 @@ html, body {
 
 .nav_right_menu_item {
     border-left: 1px solid rgba(255, 255, 255, 0);
+    width: 60px;
     height: 60px;
     color: white;
     cursor: pointer;
@@ -192,4 +193,37 @@ a.button:hover {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+}
+
+.circle_button {    
+    width: 40px;
+    height: 40px;
+    font-size: 14pt;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border: 1px solid #FFFFFF;
+    margin-left: 10px
+}
+
+#github_icon{
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    background: url(../img/github_icon.png) no-repeat center center;
+    background-size: 100%;
+}
+
+#linkedin_icon{
+    width: 45px;
+    height: 45px;
+    margin-left: 8px;
+    background: url(../img/linkedin_icon2.png) no-repeat center center;
+    background-size: 100%;
+}
+
+.right_a {
+    text-decoration: none;
 }
