@@ -29,10 +29,10 @@ $(document).ready(function(){
       scrollTop: $("#block_publication").offset().top
     }, 200);
   }
-  var slide_to_contact = function(){
-    highlight_item($("#buttom_contact"));
+  var slide_to_skill = function(){
+    highlight_item($("#buttom_skill"));
     $('html, body').animate({
-      scrollTop: $("#block_contact").offset().top
+      scrollTop: $("#block_skill").offset().top
     }, 200);
   }
 
@@ -44,10 +44,10 @@ $(document).ready(function(){
     var experience_top = $('#block_experience').offset().top;
     var project_top = $('#block_project').offset().top;
     var publication_top = $('#block_publication').offset().top;
-    var contact_top = $('#block_contact').offset().top;
+    var skill_top = $('#block_skill').offset().top;
 
     // Find current closest block 
-    var top_arr = [about_top, experience_top, project_top, publication_top, contact_top];
+    var top_arr = [about_top, experience_top, project_top, publication_top, skill_top];
     var closest = top_arr.reduce(function (prev, curr) {
       return (Math.abs(curr - current_top) < Math.abs(prev - current_top) ? curr : prev);
     });
@@ -57,7 +57,7 @@ $(document).ready(function(){
     if (closest == experience_top) highlight_item($('#buttom_experience'));
     if (closest == project_top) highlight_item($('#buttom_project'));
     if (closest == publication_top) highlight_item($('#buttom_publication'));
-    if (closest == contact_top) highlight_item($('#buttom_contact'));    
+    if (closest == skill_top) highlight_item($('#buttom_skill'));    
   });
   
   // Sliding for up/down arrow, page up/down evnets 
@@ -79,7 +79,7 @@ $(document).ready(function(){
     var experience_top = $('#block_experience').offset().top;
     var project_top = $('#block_project').offset().top;
     var publication_top = $('#block_publication').offset().top;
-    var contact_top = $('#block_contact').offset().top;
+    var skill_top = $('#block_skill').offset().top;
 
     //console.log("current_top: "+current_top);
     //console.log("scroll_up: "+scroll_up);
@@ -90,7 +90,7 @@ $(document).ready(function(){
       if (current_top - experience_top > 0) top_arr.push(experience_top);
       if (current_top - project_top > 0) top_arr.push(project_top);
       if (current_top - publication_top > 0) top_arr.push(publication_top);
-      if (current_top - contact_top > 0) top_arr.push(contact_top);
+      if (current_top - skill_top > 0) top_arr.push(skill_top);
       scroll_to = Math.max.apply(Math, top_arr);
     } else {
       var top_arr = [];
@@ -98,7 +98,7 @@ $(document).ready(function(){
       if (current_top - experience_top < 0) top_arr.push(experience_top);
       if (current_top - project_top < 0) top_arr.push(project_top);
       if (current_top - publication_top < 0) top_arr.push(publication_top);
-      if (current_top - contact_top < 0) top_arr.push(contact_top);
+      if (current_top - skill_top < 0) top_arr.push(skill_top);
       scroll_to = Math.min.apply(Math, top_arr);
     }
 
@@ -107,7 +107,7 @@ $(document).ready(function(){
     if (scroll_to == experience_top) slide_to_experience();
     if (scroll_to == project_top) slide_to_project();
     if (scroll_to == publication_top) slide_to_publication();
-    if (scroll_to == contact_top) slide_to_contact();
+    if (scroll_to == skill_top) slide_to_skill();
   });
 
   // Register click event for top menu buttom
@@ -115,5 +115,5 @@ $(document).ready(function(){
   $("#buttom_experience").click(slide_to_experience);
   $("#buttom_project").click(slide_to_project);
   $("#buttom_publication").click(slide_to_publication);
-  $("#buttom_contact").click(slide_to_contact);
+  $("#buttom_skill").click(slide_to_skill);
 });
