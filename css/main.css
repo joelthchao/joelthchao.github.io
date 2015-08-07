@@ -65,7 +65,7 @@ html, body {
     top: 0;
     bottom: 0;
     right: 0px;    
-    height: 240px;
+    height: 300px;
     margin: auto;
 }
 
@@ -210,18 +210,26 @@ a.button:hover {
 }
 
 #github_icon{
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
     margin-left: 10px;
     background: url(../img/github_icon.png) no-repeat center center;
     background-size: 100%;
 }
 
 #linkedin_icon{
-    width: 45px;
-    height: 45px;
-    margin-left: 8px;
+    width: 42px;
+    height: 42px;
+    margin-left: 10px;
     background: url(../img/linkedin_icon2.png) no-repeat center center;
+    background-size: 100%;
+}
+
+#mail_icon{
+    width: 42px;
+    height: 42px;
+    margin-left: 10px;
+    background: url(../img/mail_icon.png) no-repeat center center;
     background-size: 100%;
 }
 
