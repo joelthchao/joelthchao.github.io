@@ -126,12 +126,12 @@ $(document).ready(function(){
   var email_toggle = function(){
     if ($("#email_field").css("right") == "75px"){
       $("#email_field").animate({
-        'right': "-=400px"
+        'right': "-325px"
       }, 500);
     }
     else{
       $("#email_field").animate({
-        'right': "+=400px"
+        'right': "75px"
       }, 500);
     }
   }
