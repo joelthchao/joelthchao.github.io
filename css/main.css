@@ -178,7 +178,7 @@ ul.indent_ul {
     width: 150px;
     height: 150px;
     background-color: rgba(255, 255, 255, 0.2);
-    vertical-align: bottom;
+    vertical-align: bottom;    
 }
 
 .project_block_text {
@@ -243,4 +243,13 @@ a.button:hover {
 
 .right_a {
     text-decoration: none;
+}
+
+.project_img {
+    width: 150px;
+    vertical-align: middle;
+}
+
+.project_image_frame {
+    line-height: 150px;
 }
