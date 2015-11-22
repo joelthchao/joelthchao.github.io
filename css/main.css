@@ -104,12 +104,12 @@ html, body {
 }
 
 #block_about {
-    background: url(../img/lbg_topoftherock.JPG) no-repeat center center;
+    background: url(../img/lbg_topoftherock.jpg) no-repeat center center;
     background-size: 100%;
 }
 
 #block_skill {
-    background: url(../img/lbg_mit.JPG) no-repeat center center; 
+    background: url(../img/lbg_mit.jpg) no-repeat center center; 
     background-size: 100%;   
 }
 
@@ -119,12 +119,12 @@ html, body {
 }
 
 #block_project {
-    background: url(../img/lbg_okinawa.JPG) no-repeat center center;
+    background: url(../img/lbg_okinawa.jpg) no-repeat center center;
     background-size: 100%;   
 }
 
 #block_publication {
-    background: url(../img/lbg_boston.JPG) no-repeat center center;
+    background: url(../img/lbg_boston.jpg) no-repeat center center;
     background-size: 100%;   
 }
 
