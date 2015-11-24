@@ -246,11 +246,19 @@ a.button:hover {
 }
 
 .project_img {
-    max-height: 150px;
-    max-width: 150px;
-    vertical-align: middle;    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
 }
 
 .project_image_frame {    
-    line-height: 150px;    
+    position: relative;  
+    width: 150px; 
+    height: 150px;
+    overflow: hidden;
 }
