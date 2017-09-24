@@ -233,6 +233,14 @@ a.button:hover {
     background-size: 100%;
 }
 
+#medium_icon{
+    width: 42px;
+    height: 42px;
+    margin-left: 10px;
+    background: url(../img/medium_logo.png) no-repeat center center;
+    background-size: 100%;
+}
+
 #mail_icon{
     width: 42px;
     height: 42px;
